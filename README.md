@@ -6,6 +6,8 @@ contract address [0xCc54425fb13880C4833f51E615646163EaC2f975](https://etherscan.
 
 ## createOrder
 
+Tradling fee (Now 2%) required.
+
 ``` js
 //tx info
 {
@@ -54,6 +56,8 @@ encodeFunctionSignature('cancelOrder(bytes32)'); // 0x7489ec23
 
 ## fillOrder
 
+No tradling fee required.
+
 function fillOrder(bytes32 ethscriptionId);
 
 ```js
@@ -71,6 +75,7 @@ encodeFunctionSignature('fillOrder(bytes32)'); // 0xece21fb7
 
 ## buyOwner
 
+No tradling fee required.
 Purchase ownership and continue listing.
 
 function buyOwner(bytes32 ethscriptionId, address token, uint256 amount);
